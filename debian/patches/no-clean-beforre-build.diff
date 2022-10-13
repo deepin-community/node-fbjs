@@ -1,0 +1,16 @@
+Description: separate clean and build
+Author: Xavier Guimard <yadd@debian.org>
+Forwarded: not-needed
+Last-Update: 2020-11-02
+
+--- a/packages/fbjs/gulpfile.js
++++ b/packages/fbjs/gulpfile.js
+@@ -97,7 +97,7 @@
+ 
+ const libAndFlow = gulp.parallel(lib, flow);
+ 
+-const build = gulp.series(clean, libAndFlow);
++const build = gulp.series(libAndFlow);
+ 
+ exports.clean = clean;
+ exports.flow = flow;

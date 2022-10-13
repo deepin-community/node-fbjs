@@ -1,0 +1,43 @@
+Source: node-fbjs
+Maintainer: Debian Javascript Maintainers <pkg-javascript-devel@lists.alioth.debian.org>
+Uploaders: Pirate Praveen <praveen@debian.org>
+Section: javascript
+Priority: optional
+#Testsuite: autopkgtest-pkg-nodejs
+Build-Depends:
+ debhelper-compat (= 13)
+ , gulp
+ , node-babel7
+ , node-del
+ , node-gulp-flatten
+ , node-gulp-rename
+ , node-gulp-babel (>= 8.0~)
+ , node-merge-stream
+ , npm <!nocheck>
+ , dh-sequence-nodejs
+Standards-Version: 4.5.0
+Vcs-Browser: https://salsa.debian.org/js-team/node-fbjs
+Vcs-Git: https://salsa.debian.org/js-team/node-fbjs.git
+Homepage: https://github.com/facebook/fbjs#readme
+Rules-Requires-Root: no
+
+Package: node-fbjs
+Architecture: all
+Depends:
+ ${misc:Depends}
+ , nodejs
+ , node-core-js
+ , node-isomorphic-fetch
+ , node-loose-envify
+ , node-object-assign
+ , node-promise (>= 7.1.1)
+ , node-setimmediate
+ , node-ua-parser-js
+Provides: ${nodejs:Provides}
+Description: collection of utility libraries used by other Facebook JS projects
+ To make it easier for Facebook to share and consume their own JavaScript.
+ Primarily this will allow it to ship code without worrying too much about
+ where it lives, keeping with the spirit of `@providesModule` but working in
+ the broader JavaScript ecosystem.
+ .
+ Node.js is an event-based server-side JavaScript engine.

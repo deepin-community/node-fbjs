@@ -1,0 +1,41 @@
+Description: No check dependencies
+Author: Pirate Praveen <praveen@debian.org>
+Forwarded: not-needed
+Reviewed-By: Xavier Guimard <yadd@debian.org>
+Last-Update: 2020-11-02
+
+--- a/packages/fbjs/gulpfile.js
++++ b/packages/fbjs/gulpfile.js
+@@ -17,7 +17,6 @@
+ const fbjsConfigurePreset = require('babel-preset-fbjs/configure');
+ const gulpModuleMap = require('fbjs-scripts/gulp/module-map');
+ const gulpStripProvidesModule = require('fbjs-scripts/gulp/strip-provides-module');
+-const gulpCheckDependencies = require('fbjs-scripts/gulp/check-dependencies');
+ 
+ const paths = {
+   lib: {
+@@ -96,23 +95,11 @@
+     .pipe(gulp.dest(paths.lib.dest));
+ }
+ 
+-function checkDependencies() {
+-  return gulp
+-    .src('package.json')
+-    .pipe(gulpCheckDependencies());
+-};
+-
+ const libAndFlow = gulp.parallel(lib, flow);
+ 
+-function watch() {
+-  gulp.watch(paths.lib.src, libAndFlow);
+-};
+-
+-const build = gulp.series(checkDependencies, clean, libAndFlow);
++const build = gulp.series(clean, libAndFlow);
+ 
+ exports.clean = clean;
+ exports.flow = flow;
+-exports['check-dependencies'] = checkDependencies;
+-exports.watch = watch;
+ exports.build = build;
+ exports.default = build;

@@ -1,0 +1,96 @@
+node-fbjs (2.0.0-1) unstable; urgency=medium
+
+  * Team upload
+  * Bump debhelper compatibility level to 13
+  * Use dh-sequence-nodejs
+  * New upstream version 2.0.0
+  * Update build
+  * Refresh patches
+
+ -- Xavier Guimard <yadd@debian.org>  Mon, 02 Nov 2020 10:42:51 +0100
+
+node-fbjs (1.0.0-7) unstable; urgency=medium
+
+  * Team upload
+  * Remove useless dependency to
+    node-babel-plugin-syntax-trailing-function-commas
+
+ -- Xavier Guimard <yadd@debian.org>  Mon, 11 May 2020 09:47:04 +0200
+
+node-fbjs (1.0.0-6) unstable; urgency=medium
+
+  * Team upload
+  * Remove dependency to node-cross-spawn (Closes: #959784)
+
+ -- Xavier Guimard <yadd@debian.org>  Tue, 05 May 2020 13:57:35 +0200
+
+node-fbjs (1.0.0-5) unstable; urgency=medium
+
+  * Drop build_modules for babel7 support
+  * Use babel 7 plugin in gulpfile
+  * Embed @babel/plugin-check-constants in debian/node_modules
+  * Build with babel 7 (Closes: #958779)
+  * Switch to debian/build_modules from debian/node_modules
+
+ -- Pirate Praveen <praveen@debian.org>  Sat, 02 May 2020 12:58:53 +0530
+
+node-fbjs (1.0.0-4) unstable; urgency=medium
+
+  * Team upload
+  * Remove dependency on deprecated run-sequence
+
+ -- Xavier Guimard <yadd@debian.org>  Mon, 23 Mar 2020 15:14:42 +0100
+
+node-fbjs (1.0.0-3) unstable; urgency=medium
+
+  * Team upload
+  * Add build dependency to node-merge-stream (Closes: #954646)
+  * Fix gulpfile for node-gulp 4
+  * Add skippable autopkgtest file to avoid auto detection
+  * Declare installed modules using ${nodejs:Provides}
+  * Declare compliance with policy 4.5.0
+
+ -- Xavier Guimard <yadd@debian.org>  Mon, 23 Mar 2020 15:13:27 +0100
+
+node-fbjs (1.0.0-2) unstable; urgency=medium
+
+  * Team upload
+  * Back to unstable after successful tests
+
+ -- Xavier Guimard <yadd@debian.org>  Thu, 09 Jan 2020 18:34:58 +0100
+
+node-fbjs (1.0.0-1) experimental; urgency=medium
+
+  * Team upload
+  * Update debian/watch
+  * New upstream version 1.0.0
+  * Remove test (jest not packaged)
+  * Embed some files from previous version for build
+  * Update install
+  * Refresh patch
+  * Update copyright
+
+ -- Xavier Guimard <yadd@debian.org>  Sun, 05 Jan 2020 11:21:35 +0100
+
+node-fbjs (0.8.16-2) unstable; urgency=medium
+
+  * Team upload
+  * Bump debhelper compatibility level to 12
+  * Declare compliance with policy 4.4.1
+  * Add "Rules-Requires-Root: no"
+  * Add debian/gbp.conf
+  * Add upstream/metadata
+  * Use pkg-js-tools auto install
+  * Fix autopkgtest
+  * Add patch description
+  * Update copyright
+  * Drop unneeded version constraints from (build) dependencies
+  * Update description
+
+ -- Xavier Guimard <yadd@debian.org>  Sun, 05 Jan 2020 10:40:19 +0100
+
+node-fbjs (0.8.16-1) unstable; urgency=low
+
+  * Initial release (Closes: #886308)
+
+ -- Pirate Praveen <praveen@debian.org>  Thu, 04 Jan 2018 22:32:56 +0530

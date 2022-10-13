@@ -1,0 +1,16 @@
+Description: remove useless babel-plugin-syntax-trailing-function-commas
+Author: Xavier Guimard <yadd@debian.org>
+Forwarded: no
+Last-Update: 2020-05-11
+
+--- a/packages/babel-preset-fbjs/configure.js
++++ b/packages/babel-preset-fbjs/configure.js
+@@ -32,7 +32,7 @@
+       require('@babel/plugin-syntax-class-properties'),
+       require('@babel/plugin-syntax-flow'),
+       require('@babel/plugin-syntax-jsx'),
+-      require('babel-plugin-syntax-trailing-function-commas'),
++      //require('babel-plugin-syntax-trailing-function-commas'),
+       require('@babel/plugin-syntax-object-rest-spread'),
+ 
+       options.autoImport ? require('./plugins/auto-importer') : null,

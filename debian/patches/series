@@ -1,0 +1,4 @@
+no-check-dependencies.patch
+remove-dep-to-cross-spawn.diff
+remove-useless-babel-plugin-syntax-trailing-function-commas.diff
+no-clean-beforre-build.diff

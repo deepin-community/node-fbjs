@@ -1,0 +1,4 @@
+Test-Command: exit 77
+Depends: @
+Restrictions: allow-stderr, skippable
+Features: test-name=no-tests
