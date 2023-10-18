@@ -1,3 +1,42 @@
+node-fbjs (3.0.5-1) unstable; urgency=medium
+
+  * Team upload
+  * Created patch to resolve module name conflict
+  * New upstream version 3.0.5
+
+ -- Komolehin Israel Timilehin <komolehinisrael@gmail.com>  Tue, 03 Oct 2023 22:06:14 +0000
+
+node-fbjs (3.0.4-2) unstable; urgency=medium
+
+  [ Debian Janitor ]
+  * Remove constraints unnecessary since buster (oldstable)
+
+ -- Jelmer Vernooĳ <jelmer@debian.org>  Tue, 22 Nov 2022 21:02:05 +0000
+
+node-fbjs (3.0.4-1) unstable; urgency=medium
+
+  * Team upload
+  * Declare compliance with policy 4.6.1
+  * Fix debian/watch
+  * New upstream version 3.0.4
+  * Drop dependency to node-core-js
+  * Unfuzz patches
+
+ -- Yadd <yadd@debian.org>  Tue, 19 Jul 2022 15:41:23 +0200
+
+node-fbjs (2.0.0-2) unstable; urgency=medium
+
+  * Team upload
+
+  [ Debian Janitor ]
+  * Set upstream metadata fields: Bug-Submit.
+
+  [ Yadd ]
+  * Update standards version to 4.6.0, no changes needed.
+  * Fix debian/watch
+
+ -- Yadd <yadd@debian.org>  Sat, 11 Dec 2021 08:38:30 +0100
+
 node-fbjs (2.0.0-1) unstable; urgency=medium
 
   * Team upload

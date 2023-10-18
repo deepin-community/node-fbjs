@@ -6,6 +6,7 @@ Priority: optional
 #Testsuite: autopkgtest-pkg-nodejs
 Build-Depends:
  debhelper-compat (= 13)
+ , dh-sequence-nodejs
  , gulp
  , node-babel7
  , node-del
@@ -14,8 +15,7 @@ Build-Depends:
  , node-gulp-babel (>= 8.0~)
  , node-merge-stream
  , npm <!nocheck>
- , dh-sequence-nodejs
-Standards-Version: 4.5.0
+Standards-Version: 4.6.1
 Vcs-Browser: https://salsa.debian.org/js-team/node-fbjs
 Vcs-Git: https://salsa.debian.org/js-team/node-fbjs.git
 Homepage: https://github.com/facebook/fbjs#readme
@@ -25,12 +25,10 @@ Package: node-fbjs
 Architecture: all
 Depends:
  ${misc:Depends}
- , nodejs
- , node-core-js
  , node-isomorphic-fetch
  , node-loose-envify
  , node-object-assign
- , node-promise (>= 7.1.1)
+ , node-promise
  , node-setimmediate
  , node-ua-parser-js
 Provides: ${nodejs:Provides}
