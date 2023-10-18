@@ -1,5 +1,5 @@
-version=3
+version=4
 opts=\
 dversionmangle=auto,\
-filenamemangle=s/.*\/fbjs-v?([\d\.-]+)\.tar\.gz/node-fbjs-$1.tar.gz/ \
- https://github.com/facebook/fbjs/tags .*/archive/fbjs-v?([\d\.]+).tar.gz
+filenamemangle=s/.*?(\d[\d\.-]*@ARCHIVE_EXT@)/node-fbjs-$1/ \
+ https://github.com/facebook/fbjs/tags .*?/fbjs-v?(\d[\d\.]*)@ARCHIVE_EXT@

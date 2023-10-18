@@ -1,3 +1,14 @@
+## [3.0.1] - 2021-10-22
+
+### Fixed
+- Fixed issue preventing compatibility with Jest v27 cache key (#408)
+
+
+## [3.0.0] - 2020-10-07
+
+### Breaking
+- Removed `core-js` from `fbjs-scripts` as Jest only supports recent Node.js versions with ES2015+ support.
+
 ## [2.0.0] - 2020-07-29
 
 ### Changed

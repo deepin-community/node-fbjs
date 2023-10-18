@@ -1,4 +1,4 @@
 packages/fbjs/lib/
 packages/fbjs/module-map.json
-packages/fbjs/node_modules
+packages/fbjs/node_modules/
 node_modules/
